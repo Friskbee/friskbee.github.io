@@ -200,7 +200,7 @@ tr.detail-row {
   }
 
   .info-btn {
-    padding: 18px 0; /* länglicher Button */
+    padding: 12px 24px; /* länglicher Button */
     font-size: 1rem;
   }
 }
@@ -229,3 +229,4 @@ tr.detail-row {
   }
 
 }
+
