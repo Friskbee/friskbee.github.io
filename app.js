@@ -19,7 +19,7 @@ fetch("data_ordered.json")
           return;
         }
 
-        // Vorherige offene Detail-Row schließen
+        
         const openDetail = table.querySelector(".detail-row");
         if (openDetail) openDetail.remove();
 
@@ -27,7 +27,7 @@ fetch("data_ordered.json")
         const detailRow = document.createElement("tr");
         detailRow.classList.add("detail-row");
         const detailCell = document.createElement("td");
-        detailCell.colSpan = 1; // Spaltenanzahl der Tabelle
+        detailCell.colSpan = 1;
         detailCell.innerHTML = `
           <table>
             ${Object.keys(item).filter(k => k !== "Score").map(k => `
@@ -67,4 +67,5 @@ span.onclick = () => modal.style.display = "none";
 window.onclick = (event) => {
   if (event.target == modal) modal.style.display = "none";
 };
+
 
