@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jackals Out Chart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <h1>Jackals Out Chart</h1>
+  
+  <input id="search" placeholder="Search for Score..." />
+  <button id="howToBtn" class="info-btn">How to use</button>
+</header>
+
+<!-- Modal -->
+<div id="howToModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>How to use this Out Chart</h2>
+    <p>
+    <p><strong>NOTE:</strong> "Missed" indicates a miss on the targeted Double or Triple - but still hitting the SINGLE of that target. This chart does not account for missing the segment completely.</p>
+
+    <p>Should you hit the segment left or right of the intended target, calculate what you have remaining, then shoot your next two darts as though they were the first two darts of the turn.</p>
+
+    <p>For example: If you have <strong>127</strong> and hit a single 1, you would now have 126 and should shoot the shot just as you would if you had 3 darts in hand for 126. In cases like this, you may take the route of "Opp NOT on Finish" since you cannot finish with your remaining two darts. This could leave a more favorable finish on your next turn.</p>
+
+    <p>With this example going <strong>T19 - T15</strong>, you would leave <strong>D12</strong> which would be more favorable than <strong>T19 - T19</strong> to leave <strong>D6</strong>.</p>
+
+    <p>Cells with "--" indicate a shot that is not different than what comes before it.</p>
+
+    <p>These are not the only paths to take, but these are <strong>MY preferred routes</strong> in most cases. I may have a backup/alternate in cases of being blocked.</p>
+
+    </p>
+  </div>
+</div>
+  <main>
+    <table id="score-table"></table>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
