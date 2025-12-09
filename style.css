@@ -231,4 +231,16 @@ tr.detail-row {
 }
 
 
+tr.detail-row td table tr:nth-child(n) {
+  background-color: #ffdede;
+}
+
+tr.detail-row td table tr:nth-child(n+5) {
+  background-color: #e6ffca;
+}
+
+
+
+
+
 
